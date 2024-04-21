@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Node Id Copy",
+    "version": "1.0",
+    "description": "Extension to copy the node id in watson assistance.",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "tabs",
+        "clipboardWrite"
+    ],
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "host_permissions": [
+        "*://*.assistant.watson.cloud.ibm/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+    }
+}
